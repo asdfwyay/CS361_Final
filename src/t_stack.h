@@ -19,7 +19,7 @@ class t_stack {
     private:
         std::stack<T> data; /**Stack data structure to store elements */
         std::mutex m;/**Mutex to prevent multiple threads from accessing stack at once */
-	public:
+    public:
 	void push(T &elem);/**Push element to stack */
         T pop();/**Pop element from stack, returning popped element */
         bool empty();/**Check if stack is empty */
